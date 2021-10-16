@@ -27,7 +27,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'yarn'
     - run: yarn
-    - run: yarn add --peer @angular-devkit/schematics
     - run: npm run lint
     - run: npm run preview
     - run: npm run test
