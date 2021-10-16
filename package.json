@@ -27,7 +27,8 @@
     "preview": "tsc -p tsconfig.json",
     "build": "tsc -p tsconfig.publish.json",
     "test": "jasmine dist/**/*_spec.js",
-    "lint": "npm run eslint"
+    "lint": "npm run eslint",
+    "prepublishOnly": "npm run clean && npm run build"
   },
   "name": "schematics-task",
   "version": "0.0.1",
@@ -42,5 +43,9 @@
   ],
   "peerDependencies": {
     "@angular-devkit/schematics": "^12.2.10"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   }
 }
