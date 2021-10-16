@@ -19,5 +19,15 @@
     "eslint": "DEBUG=eslint:cli-engine eslint .",
     "eslint-fix": "DEBUG=eslint:cli-engine eslint --fix .",
     "prepare": "husky install || exit 0"
+  },
+  "name": "schematics-task",
+  "version": "0.0.1",
+  "description": "add and run task like schematics's NodePackageInstallTask",
+  "main": "dist/task/index.js",
+  "repository": "git@github.com:wyntau/schematics-task.git",
+  "author": "wyntau <wyntau@outlook.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular-devkit/schematics": "^12.2.10"
   }
 }
