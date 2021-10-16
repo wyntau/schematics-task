@@ -1,6 +1,7 @@
 import { Rule, SchematicContext, Tree } from '@angular-devkit/schematics';
 import { RunSchematicTask } from '@angular-devkit/schematics/tasks';
 import { ITaskOptions, TaskFn } from './schema';
+import path from 'path';
 
 export { TaskFn } from './schema';
 
@@ -20,7 +21,7 @@ export function runTask(taskFn: ITaskOptions): Rule {
  */
 export function addTask(taskFn: TaskFn): Rule {
   return function (tree, context) {
-    context.addTask(new RunSchematicTask<TaskFn>('task', taskFn));
+    context.addTask(new RunSchematicTask<TaskFn>(path.join(__dirname, '../collection.json'), 'task', taskFn));
     return tree;
   };
 }
