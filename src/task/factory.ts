@@ -2,7 +2,7 @@ import { Rule } from '@angular-devkit/schematics';
 import { TaskFn } from './index';
 import debugLib from 'debug';
 
-const debug = debugLib('schematics-task:task');
+const debug = debugLib('schematics-task:schematic');
 
 type ITaskOptions = TaskFn;
 
