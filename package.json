@@ -36,7 +36,7 @@
   "name": "schematics-task",
   "version": "0.2.7",
   "description": "add and run task like schematics's NodePackageInstallTask",
-  "main": "dist/task/index.js",
+  "main": "dist/run/register.js",
   "repository": "git@github.com:wyntau/schematics-task.git",
   "author": "wyntau <wyntau@outlook.com>",
   "license": "MIT",

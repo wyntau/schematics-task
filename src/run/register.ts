@@ -5,11 +5,11 @@ import debugLib from 'debug';
 
 export type TaskFn = Rule;
 
-const debug = debugLib('schematics-task:index');
+const debug = debugLib('schematics-task:register');
 
 export function newTask(taskFn: TaskFn): RunSchematicTask<TaskFn> {
   debug('new task', taskFn.name);
-  return new RunSchematicTask<TaskFn>(path.join(__dirname, '../collection.json'), 'task', taskFn);
+  return new RunSchematicTask<TaskFn>(path.join(__dirname, '../collection.json'), 'run', taskFn);
 }
 
 /**

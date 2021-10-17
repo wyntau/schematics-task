@@ -1,9 +1,9 @@
 {
   "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
   "schematics": {
-    "task": {
+    "run": {
       "description": "task schematics",
-      "factory": "./task/factory#runTask",
+      "factory": "./run/runner#runTask",
       "hidden": true
     }
   }
