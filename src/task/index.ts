@@ -19,8 +19,8 @@ export function newTask(taskFn: TaskFn): RunSchematicTask<TaskFn> {
  */
 export function addTask(taskFn: TaskFn): Rule {
   return function (tree, context) {
-    debug('add task', taskFn.name);
     context.addTask(newTask(taskFn));
+    debug('add task', taskFn.name);
     return tree;
   };
 }
