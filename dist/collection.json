@@ -3,7 +3,7 @@
   "schematics": {
     "task": {
       "description": "task schematics",
-      "factory": "./task/factory#runTask",
+      "factory": "./task/runner#runTask",
       "hidden": true
     }
   }
