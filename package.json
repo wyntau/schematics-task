@@ -34,7 +34,7 @@
     "prepublishOnly": "npm run clean && npm run build"
   },
   "name": "schematics-task",
-  "version": "0.2.8",
+  "version": "0.2.9",
   "description": "add and run task like schematics's NodePackageInstallTask",
   "main": "dist/task/register.js",
   "repository": "git@github.com:wyntau/schematics-task.git",
