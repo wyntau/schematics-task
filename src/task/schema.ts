@@ -1,4 +1,4 @@
-import { SchematicContext, Tree } from '@angular-devkit/schematics';
+import { Rule } from '@angular-devkit/schematics';
 
-export type TaskFn = (tree: Tree, context: SchematicContext) => any;
+export type TaskFn = Rule;
 export type ITaskOptions = TaskFn;
