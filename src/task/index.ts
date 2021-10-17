@@ -1,12 +1,11 @@
 import { Rule } from '@angular-devkit/schematics';
 import { RunSchematicTask } from '@angular-devkit/schematics/tasks';
-import { TaskFn } from './schema';
 import path from 'path';
 import debugLib from 'debug';
 
-const debug = debugLib('schematics-task:index');
+export type TaskFn = Rule;
 
-export { TaskFn } from './schema';
+const debug = debugLib('schematics-task:index');
 
 export function newTask(taskFn: TaskFn): RunSchematicTask<TaskFn> {
   debug('new task', taskFn.name);
