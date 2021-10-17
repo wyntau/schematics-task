@@ -1,18 +1,12 @@
-import { Rule, SchematicContext, Tree } from '@angular-devkit/schematics';
+import { Rule } from '@angular-devkit/schematics';
 import { RunSchematicTask } from '@angular-devkit/schematics/tasks';
-import { ITaskOptions, TaskFn } from './schema';
+import { TaskFn } from './schema';
 import path from 'path';
 
 export { TaskFn } from './schema';
 
-// You don't have to export the function as default. You can also have more than one rule factory
-// per file.
-export function runTask(taskFn: ITaskOptions): Rule {
-  return async (tree: Tree, context: SchematicContext): Promise<void> => {
-    try {
-      taskFn(tree, context);
-    } catch (e) {} // eslint-disable-line
-  };
+export function newTask(taskFn: TaskFn): RunSchematicTask<TaskFn> {
+  return new RunSchematicTask<TaskFn>(path.join(__dirname, '../collection.json'), 'task', taskFn);
 }
 
 /**
@@ -21,7 +15,7 @@ export function runTask(taskFn: ITaskOptions): Rule {
  */
 export function addTask(taskFn: TaskFn): Rule {
   return function (tree, context) {
-    context.addTask(new RunSchematicTask<TaskFn>(path.join(__dirname, '../collection.json'), 'task', taskFn));
+    context.addTask(newTask(taskFn));
     return tree;
   };
 }
