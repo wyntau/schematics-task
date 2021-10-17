@@ -9,7 +9,7 @@ const debug = debugLib('schematics-task:index');
 export { TaskFn } from './schema';
 
 export function newTask(taskFn: TaskFn): RunSchematicTask<TaskFn> {
-  debug('new task');
+  debug('new task', taskFn.name);
   return new RunSchematicTask<TaskFn>(path.join(__dirname, '../collection.json'), 'task', taskFn);
 }
 
@@ -19,7 +19,7 @@ export function newTask(taskFn: TaskFn): RunSchematicTask<TaskFn> {
  */
 export function addTask(taskFn: TaskFn): Rule {
   return function (tree, context) {
-    debug('add task');
+    debug('add task', taskFn.name);
     context.addTask(newTask(taskFn));
     return tree;
   };
