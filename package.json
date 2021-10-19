@@ -41,7 +41,7 @@
   "author": "wyntau <wyntau@outlook.com>",
   "license": "MIT",
   "files": [
-    "dist"
+    "/dist"
   ],
   "keywords": [
     "schematics",
