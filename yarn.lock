@@ -258,7 +258,7 @@
   dependencies:
     "@types/ms" "*"
 
-"@types/jasmine@^3.10.0":
+"@types/jasmine@3.10.0":
   version "3.10.0"
   resolved "https://registry.npmmirror.com/@types/jasmine/download/@types/jasmine-3.10.0.tgz#b55e7184102ef320c4e8fb3d64ebfac309f60bf7"
   integrity sha1-tV5xhBAu8yDE6Ps9ZOv6wwn2C/c=
@@ -1319,7 +1319,7 @@ jasmine-core@~3.10.0:
   resolved "https://registry.npmmirror.com/jasmine-core/download/jasmine-core-3.10.0.tgz#1e3e4053d954eb6d0bfbb3eb859bb21a5655de45"
   integrity sha1-Hj5AU9lU620L+7PrhZuyGlZV3kU=
 
-jasmine@^3.10.0:
+jasmine@3.10.0:
   version "3.10.0"
   resolved "https://registry.npmmirror.com/jasmine/download/jasmine-3.10.0.tgz#acd3cd560a9d20d8fdad6bd2dd05867d188503f3"
   integrity sha1-rNPNVgqdINj9rWvS3QWGfRiFA/M=
