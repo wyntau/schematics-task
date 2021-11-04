@@ -24,7 +24,7 @@
   "scripts": {
     "eslint": "DEBUG=eslint:cli-engine eslint .",
     "eslint-fix": "DEBUG=eslint:cli-engine eslint --fix .",
-    "prepare": "husky install || exit 0",
+    "prepare": "(husky install 2>/dev/null ||:) && mkdir -p .husky",
     "clean": "rm -rf dist && git checkout -- dist",
     "watch": "npm run preview -- --watch",
     "preview": "tsc -p tsconfig.json",
