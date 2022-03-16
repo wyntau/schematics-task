@@ -4,7 +4,7 @@
     "@commitlint/cli": "^16.0.0",
     "@commitlint/config-conventional": "^16.0.0",
     "@types/debug": "^4.1.7",
-    "@types/jasmine": "^3.10.0",
+    "@types/jasmine": "^4.0.0",
     "@types/node": "^16.11.0",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
