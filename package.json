@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "@angular-devkit/schematics": "^13.0.0",
+    "@angular-devkit/schematics": "^17.0.0",
     "@commitlint/cli": "^17.0.0",
     "@commitlint/config-conventional": "^17.0.0",
     "@types/debug": "^4.1.7",
@@ -50,7 +50,7 @@
     "task"
   ],
   "peerDependencies": {
-    "@angular-devkit/schematics": "^13.0.0"
+    "@angular-devkit/schematics": "^17.0.0"
   },
   "publishConfig": {
     "access": "public",
